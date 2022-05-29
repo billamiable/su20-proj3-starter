@@ -167,10 +167,10 @@
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="1132" y="49">ASel</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="1182" y="49">BSel</text>
       <circ-port height="10" pin="670,210" width="10" x="1165" y="25"/>
-      <circ-port height="10" pin="620,210" width="10" x="1115" y="25"/>
       <circ-port height="10" pin="570,210" width="10" x="925" y="25"/>
-      <circ-port height="10" pin="500,210" width="10" x="575" y="25"/>
       <circ-port height="10" pin="420,210" width="10" x="495" y="25"/>
+      <circ-port height="10" pin="500,210" width="10" x="575" y="25"/>
+      <circ-port height="10" pin="620,210" width="10" x="1115" y="25"/>
       <circ-port height="10" pin="350,210" width="10" x="55" y="25"/>
       <circ-port height="8" pin="250,210" width="8" x="1006" y="26"/>
       <circ-port height="8" pin="200,210" width="8" x="966" y="26"/>
@@ -182,6 +182,7 @@
       <circ-port height="10" pin="880,210" width="10" x="1735" y="25"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="1756" y="49">WBSel</text>
       <rect fill="none" height="40" rx="10" ry="10" stroke="#000000" stroke-width="2" width="1740" x="30" y="30"/>
+      <circ-port height="10" pin="990,210" width="10" x="35" y="65"/>
       <circ-anchor facing="north" height="6" width="6" x="57" y="27"/>
     </appear>
     <wire from="(70,100)" to="(70,230)"/>
@@ -198,6 +199,7 @@
     <wire from="(70,230)" to="(110,230)"/>
     <wire from="(880,210)" to="(880,230)"/>
     <wire from="(310,150)" to="(920,150)"/>
+    <wire from="(990,210)" to="(990,230)"/>
     <wire from="(570,210)" to="(570,230)"/>
     <wire from="(620,210)" to="(620,230)"/>
     <wire from="(670,210)" to="(670,230)"/>
@@ -349,6 +351,16 @@
     </comp>
     <comp lib="5" loc="(606,143)" name="Text">
       <a name="text" val="OUTPUT from your circuit"/>
+    </comp>
+    <comp lib="0" loc="(990,210)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="BrSel"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(990,230)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="BrSel"/>
     </comp>
   </circuit>
 </project>
